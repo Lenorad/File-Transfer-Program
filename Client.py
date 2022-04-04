@@ -5,17 +5,17 @@ import sys
 ip = 'localhost'
 port = 5555
 try:
-	ip = sys.argv[1]
-	port = sys.argv[2]
+	ip = str(sys.argv[1])
+	port = int(sys.argv[2])
 except IndexError:
 	pass
 
 
 class Client:
-	def __init__(self, ip=(ip, port)):
+	def __init__(self, address=(ip, port)):
 		client = socket.socket()
-		client.connect(ip)
-		print(f'[*] Connected to {ip}.\n')
+		client.connect(address)
+		print(f'[*] Connected to {address}.\n')
 		self.client = client
 		Client.main(self)	
 	
