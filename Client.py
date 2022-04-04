@@ -31,6 +31,8 @@ class Client:
 				request = input('\n>')
 			except KeyboardInterrupt:
 				break
+			if request == 'exit':
+				break
 			if request == '' or request == ' ':
 				continue
 			self.client.send(request.encode())
