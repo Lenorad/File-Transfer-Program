@@ -7,8 +7,8 @@ ip = 'localhost'
 port = 5555
 
 try:
-	ip = sys.argv[1]
-	port = sys.argv[2]
+	ip = str(sys.argv[1])
+	port = int(sys.argv[2])
 except IndexError:
 	pass
 
@@ -36,11 +36,11 @@ if files != []:
 
 
 class Server:
-	def __init__(self, ip=(ip, port)):
+	def __init__(self, address=(ip, port)):
 		server = socket.socket()
-		server.bind(ip)
+		server.bind(address)
 		server.listen()
-		print(f'[*] Server is listening on {ip}.')
+		print(f'[*] Server is listening on {address}.')
 		self.server = server
 		self.file_dic = file_dic
 		self.file_list = file_list
