@@ -15,7 +15,7 @@
 **NOTE**
 > Server must be allowed to communicate through firewall on public.  
 > To do that Control Panel/System and Security/Windows Defender Firewall/Allowed Apps/Change settings and add the application.  
-> Pyinstaller is used to make exe file.
-> Server ip-address is your router ip-address.
+> Pyinstaller is used to make exe file.  
+> Server ip-address is must be your router ip-address.
 
 Coded by Aung Tay Zar Ko.
