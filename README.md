@@ -13,7 +13,7 @@
   get 0
 
 **NOTE**
-> Server must be allowed to communicate through firewall on public.  
+> Server must be allowed to communicate through firewall on public. Also for the router you need to give acess to that port.   
 > To do that Control Panel/System and Security/Windows Defender Firewall/Allowed Apps/Change settings and add the application.  
 > Pyinstaller is used to make exe file.  
 > Server ip-address is must be your router ip-address.
